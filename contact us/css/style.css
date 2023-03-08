@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right:10px ;
+    padding-left: 10px;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+}
+.logo img{
+    width: 100%;
+
+}
+.menu-bar{
+    font-size: 22px;
+    color: #fff;
+    display: none;
+}
+.cross{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:50px ;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    padding-left: 8px;
+    padding-right:8px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight:700;
+}
+nav ul li:hover a:not(.btn){
+    color: #F6A46C;
+}
+
+.btn{
+    background:#F6A46C;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ .header-content{
+     margin-top: 50px;
+ }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.col1 img{
+    width: 100%;
+}
+.col1 h1{
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.col1{
+    flex-basis: 41%;
+    max-width: 41%;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        background: #6533D6;
+        z-index: 2;
+        padding-bottom: 20px;
+        transition: .3s;
+    }
+    nav ul li{
+        margin-top: 30px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .cross{
+        display: block;
+        color: #fff;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+        color:#6533D6;
+    }
+    .row{
+        display: block;
+    }
+    .header-content .row .col1 {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    .col1 h1{
+        font-size:45px;
+    }
+    .col1 img{
+         width: 90%;
+    }
+
+
+}
+
+
+ /* OUR work section */
+ .work-head h2{
+    text-align: center;
+    font-size: 50px;
+    color: #292929;
+}
+.work-text p{
+    text-align: center;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #292929;
+
+}
+.contact-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px
+}
+.contact-col{
+  gap:10px
+}
+.phone-number{
+    background: rgba(101,51,214,.1);
+    padding: 45px;
+    width: 400px;
+    height: 180px;
+    border-radius: 12px;
+}
+.phone-number h3{
+    color: #EB433D;
+    margin-bottom: 30px;
+    font-weight: bold;
+
+}
+.phone-number p{
+    color: #EB433D;
+    margin-bottom: 10px;
+
+}
+
+.adress{
+    background:#FDECEB;
+    padding: 45px;
+    width: 400px;
+    height: 180px;
+    border-radius: 12px;
+}
+.adress h3{
+    margin-bottom: 30px;
+    color: #6533D6;
+    font-weight: bold;
+}
+.adress p{
+    color:#6533D6 ;
+
+}
+.conatct-form{
+    margin-top: 100px;
+}
+.conatct-form h1{
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.conatct-form form ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.conatct-form ul li{
+    margin-bottom: 20px;
+    padding-right: 16px;
+}
+.conatct-form ul li label{
+     display: block;
+     margin-bottom: 8px;
+     display: inline-block;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 14px;
+}
+ul li input{
+    display: block;
+    width: 100%;
+    min-height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #2f2f2f;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #e2e2e2;
+    border-radius: 1.2rem;
+
+}
+
+ul :last-child  {
+    grid-column: 1/5;
+}
+ul li textarea{
+    width: 100%;
+    min-height: 181px;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #2f2f2f;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #e2e2e2;
+    border-radius: 1.2rem;
+}
+
+.submit-btn input{
+    padding: 10px 25px;
+    width:200px;
+    border: none;
+    background: #6533D6;
+    color: #e2e2e2;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 1.2rem;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .work-head h2{
+        font-size: 40px;
+    }
+    .work-head h2{
+        font-size:50;
+    }
+
+    .work-text p{
+        font-size: 12px;
+        width: 100%;
+    }
+
+
+.conatct-form form ul{
+    display: block;
+
+}
+
+
+
+}
+
+/* foooooooooooter */
+footer{
+    background:#6533D6 ;
+}
+.footer-content{
+    padding-top: 85px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+ul{
+    list-style: none;
+}
+.footer-logo p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Tajawal,sans-serif;
+
+}
+.footer-links h2{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.footer-links ul{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px 50px;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.contact-us h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.contact-us p{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-us .fa{
+    margin-right: 8px;
+}
+.social .fa{
+    color: #fff;
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-row{
+        display: block;
+    }
+    .footer-logo  img{
+        width: 130px;
+    }
+    .col4{
+        margin-bottom: 30px;
+    }
+
+
+}
+

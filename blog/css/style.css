@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right:10px ;
+    padding-left: 10px;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+}
+.logo img{
+    width: 100%;
+
+}
+.menu-bar{
+    font-size: 22px;
+    color: #fff;
+    display: none;
+}
+.cross{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:50px ;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    padding-left: 8px;
+    padding-right:8px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight:700;
+}
+nav ul li:hover a:not(.btn){
+    color: #F6A46C;
+}
+
+.btn{
+    background:#F6A46C;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ .header-content{
+     margin-top: 50px;
+ }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.col1 img{
+    width: 100%;
+}
+.col1 h1{
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.col1{
+    flex-basis: 41%;
+    max-width: 41%;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        background: #6533D6;
+        z-index: 2;
+        padding-bottom: 20px;
+        transition: .3s;
+    }
+    nav ul li{
+        margin-top: 30px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .cross{
+        display: block;
+        color: #fff;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+        color:#6533D6;
+    }
+    .row{
+        display: block;
+    }
+    .header-content .row .col1 {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    .col1 h1{
+        font-size:45px;
+    }
+    .col1 img{
+         width: 90%;
+    }
+
+
+}
+
+
+
+/* blog section */
+.blog-head{
+    margin-top: 10rem;
+
+}
+.blog-head h2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: #707070;
+}
+.blog-text p{
+    text-align: center;
+    font-weight:bold;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.blog-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.blog-row .blog-col2{
+    flex:0  0 31.333%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    height: 100%;
+
+}
+ .blog-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.blog-img p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 3px;
+    color: #000;
+    transition: .4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.blog-img p:hover{
+   color: #6533D6;
+
+}
+.view-more{
+    position: relative;
+    width: 100%;
+}
+.view-more a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin-bottom: 100px;
+}
+.more-btn{
+    position: relative;
+    text-decoration: none;
+    background: #EF4136;
+    font-family: GT America;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+    display: block;
+    width: fit-content;
+    padding-right: 19px;
+    padding-left: 19px;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .blog-row .blog-col2{
+        flex:0  100%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 20px;
+        height: 100%;
+
+    }
+    .blog-img p{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #000;
+        transition: .4s;
+        cursor: pointer;
+    }
+    .blog-head h2{
+        font-size:50px;
+    }
+    .blog-text p{
+        font-size: 12px;
+    }
+
+
+}
+
+/* --------sebscribe-------*/
+
+.sebscribe{
+    margin-top: 130px;
+    text-align: center;
+    background:#F6A46C ;
+    padding: 100px;
+}
+.sebscribe h2{
+    color: #fff;
+     font-size: 5em;
+}
+.sebscribe form input:first-child{
+    width:25vw;
+    padding:  8px 5px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.sebscribe form input[type="submit"]{
+   padding: 8px 20px;
+   background: #6533D6;
+   color: #fff;
+   border: none;
+   border-radius: 20px;
+   font-weight: b;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .sebscribe h2{
+        color: #fff;
+        font-size:120%;
+
+    }
+    .sebscribe form input:first-child{
+        width:70%;
+        padding:  8px 5px;
+        border: none;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+    .sebscribe form input[type="submit"]{
+       padding: 8px 15px;
+       background: #6533D6;
+       color: #fff;
+       border: none;
+       border-radius: 20px;
+       font-weight: bold;
+       font-size: 12px;
+
+    }
+
+
+}
+
+
+
+
+/* foooooooooooter */
+footer{
+    background:#6533D6 ;
+}
+.footer-content{
+    padding-top: 85px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+ul{
+    list-style: none;
+}
+.footer-logo p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Tajawal,sans-serif;
+
+}
+.footer-links h2{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.footer-links ul{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px 50px;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.contact-us h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.contact-us p{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact-us .fa{
+    margin-right: 8px;
+}
+.social .fa{
+    color: #fff;
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-row{
+        display: block;
+    }
+    .footer-logo  img{
+        width: 130px;
+    }
+    .col4{
+        margin-bottom: 30px;
+    }
+
+
+}
+
